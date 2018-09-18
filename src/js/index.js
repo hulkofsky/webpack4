@@ -1,5 +1,5 @@
-import jQuery from 'jquery';
+import $ from 'jquery';
 
-jQuery(function() {
-    jQuery('body').css('color', 'blue');
+$(function() {
+    $('body').css('color', 'white');
 });

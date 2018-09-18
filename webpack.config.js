@@ -1,6 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+//const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -75,18 +75,18 @@ module.exports = {
     template: "./src/index.html",
     filename: "./index.html"
     }),
-      new CopyWebpackPlugin([{
-        from: './src/fonts',
-        to: './fonts'
-      },
-      {
-        from: './src/favicon',
-        to: './favicon'
-      },
-      {
-        from: './src/img',
-        to: './img'
-      }
-    ])
+    //   new CopyWebpackPlugin([{
+    //     from: './src/fonts',
+    //     to: './fonts'
+    //   },
+    //   {
+    //     from: './src/favicon',
+    //     to: './favicon'
+    //   },
+    //   {
+    //     from: './src/img',
+    //     to: './img'
+    //   }
+    // ])
   ]
 };
